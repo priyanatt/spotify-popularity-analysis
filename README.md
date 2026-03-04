@@ -1,72 +1,204 @@
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# # Project Overview
 
-## Template Instructions
+This project analyses Spotify track data to investigate how different audio characteristics influence song popularity. The dataset includes characteristics such as danceability, energy, tempo, and explicit content.
 
-Welcome,
+The project uses Python to clean, analyse, and visualise the data in order to explore patterns between audio features and popularity. The results are presented through visualisations and an interactive dashboard that allows users to explore the dataset and key insights.
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+Dataset: **Spotify Tracks Dataset from Kaggle**
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+Key Features:
 
-## How to use this repo
+- ETL pipeline for extracting, cleaning, and preparing the dataset using Python
+- Exploratory Data Analysis (EDA) to identify patterns in song popularity and audio features
+- Statistical analysis to examine relationships between variables such as danceability, energy, and popularity
+- Machine learning model implemented using Scikit-learn
+- Interactive dashboard created using Tableau for data exploration
+- Data visualisations including scatter plots, histograms, bar charts, and correlation analysis
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
 
-1. Copy the URL of your repository to your clipboard.
+# Business Requirements
 
-1. In VS Code, select **File** -> **Open Folder**.
+## Context
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
+Music streaming platforms collect a large amount of data about songs and their audio features. This project uses Spotify track data to explore how different features relate to song popularity.
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open the terminal.
+The dataset includes features such as danceability, energy, tempo, and whether a track is explicit. The aim is to analyse these features and see if any patterns appear in more popular songs.
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
+## Stakeholder Needs
 
-1. In VS Code, select **File** > **Open Folder** again.
+information pending
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+## Business Requirements
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
+### BR1: Audio Features and Popularity
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+Analyse which audio features are most related to song popularity.
 
-1. Choose **Venv** from the dropdown list.
+**Success Criteria:**
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+Visualisations and analysis showing the relationship between popularity and features such as danceability and energy.
 
-1. **DO NOT** click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
+### BR2: Explicit vs Non-Explicit Songs
 
-1. You will see a `.venv` folder appear in the file explorer pane to show that the virtual environment has been created.
+Compare the popularity of explicit and non-explicit songs.
 
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
+**Success Criteria:**
 
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
+Charts and analysis showing whether explicit songs have higher or lower popularity on average.
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
+### BR3: Tempo and Popular Songs
 
- ```console
- pip3 install -r requirements.txt
- ```
+Explore what tempo ranges are common among popular songs.
 
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
+**Success Criteria:**
 
-1. Click the **kernel** button and choose **Python Environments**.
+Visualisations showing how tempo is distributed and how it relates to song popularity.
 
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
 
-```console
-! python --version
-```
+# Project Hypothesis & Validation
 
-## Deployment Reminders
+### Hypothesis 1: Audio Features and Popularity
 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version that closest matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
+H₀: Energy and danceability have no relationship with song popularity.  
+H₁: Tracks with higher energy and danceability tend to have higher popularity scores.
 
-1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+Test:
+
+Results:
+- Test Statistic: t =
+- P-Value:
+- Effect Size:
+- Decision:
+
+Business Implication:
+
+
+### Hypothesis 2: Explicit vs Non-Explicit Songs
+
+H₀: Explicit and non-explicit tracks have equal average popularity.  
+H₁: Explicit tracks have higher average popularity than non-explicit tracks.
+
+Test:
+
+Results:
+- Test Statistic: t =
+- P-Value:
+- Effect Size:
+- Decision:
+
+Business Implication:
+
+
+### Hypothesis 3: Tempo and Popular Songs
+
+H₀: Tempo has no relationship with song popularity.  
+H₁: Songs with moderate tempo (approximately 90–130 BPM) tend to have higher popularity than songs with very slow or very fast tempos.
+
+Test:
+
+Results:
+- Test Statistic: t =
+- P-Value:
+- Effect Size:
+- Decision:
+
+Business Implication:
+
+
+# Dataset Description
+
+**Source:** Kaggle – Spotify Tracks Dataset
+
+**Records:** information pending
+
+The dataset contains information about Spotify tracks along with various audio features that describe the characteristics of each song. These features are generated using Spotify’s audio analysis system and help describe different aspects of a track such as rhythm, intensity, and mood.
+
+## Features
+
+track_id: Unique identifier for each track  
+
+artists: Name of the artist(s) who performed the track  
+
+album_name: Name of the album the track belongs to  
+
+track_name: Name of the song  
+
+popularity: Popularity score of the track on Spotify  
+
+duration_ms: Length of the track in milliseconds  
+
+explicit: Indicates whether the track contains explicit content  
+
+danceability: Measure of how suitable a track is for dancing  
+
+energy: Measure of the intensity and activity level of the track  
+
+key: The musical key the track is played in  
+
+loudness: Overall loudness of the track in decibels  
+
+mode: Indicates the modality of the track (major or minor)  
+
+speechiness: Measure of spoken words within the track  
+
+acousticness: Confidence measure of whether the track is acoustic  
+
+instrumentalness: Measure of how likely a track contains no vocals  
+
+liveness: Probability that the track was performed live  
+
+valence: Measure of the musical positivity conveyed by the track  
+
+tempo: The estimated tempo of the track in beats per minute (BPM)  
+
+time_signature: Number of beats in each bar of the track  
+
+track_genre: Genre classification of the track  
+
+
+# Technologies Used
+
+information pending
+
+
+# Project Structure
+
+information pending
+
+
+# Project Objectives
+
+The aim of this project is to:
+
+- Implement a basic ETL (Extract, Transform, Load) pipeline using Python
+- Analyse Spotify track data to explore factors that may influence song popularity
+- Investigate relationships between audio features such as danceability, energy, and tempo
+- Compare the popularity of explicit and non-explicit tracks
+- Create data visualisations to show patterns and trends in the dataset
+- Build an interactive Tableau dashboard to allow users to explore the data
+
+
+# Methodology
+
+information pending
+
+
+# Key Findings
+
+information pending
+
+
+# Results & Performance
+
+information pending
+
+
+# Learning Journey & Reflections
+
+information pending
+
+
+# Future Improvements
+
+information pending
