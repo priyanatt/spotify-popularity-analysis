@@ -39,13 +39,14 @@ Analyse which audio features are most related to song popularity.
 
 Visualisations and analysis showing the relationship between popularity and features such as danceability and energy.
 
-### BR2: Explicit vs Non-Explicit Songs
 
-Compare the popularity of explicit and non-explicit songs.
+### BR2: Acousticness and Song Popularity
+
+Analyse whether songs with high acousticness have different popularity levels than songs with low acousticness.
 
 **Success Criteria:**
 
-Charts and analysis showing whether explicit songs have higher or lower popularity on average.
+Visualisations and analysis showing whether songs with higher acousticness levels differ in popularity compared to less acoustic songs.
 
 ### BR3: Tempo and Popular Songs
 
@@ -74,10 +75,11 @@ Results:
 Business Implication:
 
 
-### Hypothesis 2: Explicit vs Non-Explicit Songs
+### Hypothesis 2: Acousticness and Popularity
 
-H₀: Explicit and non-explicit tracks have equal average popularity.  
-H₁: Explicit tracks have higher average popularity than non-explicit tracks.
+H₀: Songs with high acousticness and low acousticness have equal average popularity.
+H₁: Songs with high acousticness have different average popularity compared to songs with low acousticness.
+
 
 Test:
 
