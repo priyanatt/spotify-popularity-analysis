@@ -59,12 +59,12 @@ Visualisations showing how tempo is distributed and how it relates to song popul
 
 # Project Hypothesis & Validation
 
-### Hypothesis 1: Audio Features and Popularity
+### Hypothesis 1 – Energy and Song Popularity
 
-H₀: Energy and danceability have no relationship with song popularity.  
-H₁: Tracks with higher energy and danceability tend to have higher popularity scores.
+H₀: Average song popularity is equal across low, medium, and high energy songs.
+H₁: At least one energy group has a different average song popularity.
 
-Test:
+Test: One-way ANOVA.
 
 Results:
 - Test Statistic: t =
@@ -75,13 +75,12 @@ Results:
 Business Implication:
 
 
-### Hypothesis 2: Acousticness and Popularity
+### Hypothesis 2 – Acousticness and Song Popularity
 
 H₀: Songs with high acousticness and low acousticness have equal average popularity.
 H₁: Songs with high acousticness have different average popularity compared to songs with low acousticness.
 
-
-Test:
+Test: Mann-Whitney U Test.
 
 Results:
 - Test Statistic: t =
@@ -92,12 +91,12 @@ Results:
 Business Implication:
 
 
-### Hypothesis 3: Tempo and Popular Songs
+### Hypothesis 3 – Tempo and Popular Songs
 
-H₀: Tempo has no relationship with song popularity.  
-H₁: Songs with moderate tempo (approximately 90–130 BPM) tend to have higher popularity than songs with very slow or very fast tempos.
+H₀: Tempo range and song popularity category are independent.
+H₁: Tempo range and song popularity category are associated.
 
-Test:
+Test: Chi-Squared Test.
 
 Results:
 - Test Statistic: t =
