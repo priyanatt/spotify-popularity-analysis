@@ -26,9 +26,11 @@ mdurl==0.1.2
 narwhals==2.15.0
 numpy==1.26.4
 packaging==24.2
-pandas==2.1.1
+pandas==3.0.1
+pandas-flavor==0.8.1
 patsy==1.0.2
 Pillow==10.0.1
+pingouin==0.6.0
 plotly==5.17.0
 ppscore==1.1.0
 protobuf==5.29.5
@@ -49,6 +51,7 @@ six==1.17.0
 smmap==5.0.2
 statsmodels==0.14.6
 streamlit==1.40.2
+tabulate==0.10.0
 tenacity==9.1.2
 threadpoolctl==3.6.0
 toml==0.10.2
@@ -56,5 +59,6 @@ tornado==6.5.4
 typing_extensions==4.15.0
 tzdata==2025.3
 urllib3==2.6.3
+xarray==2026.2.0
 xgboost==1.7.6
 yellowbrick==1.5
